@@ -1,0 +1,84 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:2923), pid=4536, tid=1116
+#  Error: ShouldNotReachHere()
+#
+# Java VM: Java HotSpot(TM) Client VM (11.0-b15 mixed mode windows-x86)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0131a000):  JavaThread "Unknown thread" [_thread_in_vm, id=1116, stack(0x00350000,0x003a0000)]
+
+Stack: [0x00350000,0x003a0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0131a000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=1116, stack(0x00350000,0x003a0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\Program Files\Java\jre6\bin\javaw.exe
+0x779a0000 - 0x77adc000 	C:\Windows\SYSTEM32\ntdll.dll
+0x76120000 - 0x761f4000 	C:\Windows\system32\kernel32.dll
+0x75ad0000 - 0x75b1b000 	C:\Windows\system32\KERNELBASE.dll
+0x77380000 - 0x77420000 	C:\Windows\system32\ADVAPI32.dll
+0x76070000 - 0x7611c000 	C:\Windows\system32\msvcrt.dll
+0x76210000 - 0x76229000 	C:\Windows\SYSTEM32\sechost.dll
+0x772d0000 - 0x77372000 	C:\Windows\system32\RPCRT4.dll
+0x75de0000 - 0x75ea9000 	C:\Windows\system32\USER32.dll
+0x775d0000 - 0x7761e000 	C:\Windows\system32\GDI32.dll
+0x76200000 - 0x7620a000 	C:\Windows\system32\LPK.dll
+0x77230000 - 0x772cd000 	C:\Windows\system32\USP10.dll
+0x765b0000 - 0x765cf000 	C:\Windows\system32\IMM32.DLL
+0x76450000 - 0x7651c000 	C:\Windows\system32\MSCTF.dll
+0x7c340000 - 0x7c396000 	C:\Program Files\Java\jre6\bin\msvcr71.dll
+0x6d800000 - 0x6da56000 	C:\Program Files\Java\jre6\bin\client\jvm.dll
+0x733d0000 - 0x73402000 	C:\Windows\system32\WINMM.dll
+0x758f0000 - 0x7593c000 	C:\Windows\system32\apphelp.dll
+0x6d280000 - 0x6d288000 	C:\Program Files\Java\jre6\bin\hpi.dll
+0x77420000 - 0x77425000 	C:\Windows\system32\PSAPI.DLL
+0x6d7b0000 - 0x6d7bc000 	C:\Program Files\Java\jre6\bin\verify.dll
+0x6d320000 - 0x6d33f000 	C:\Program Files\Java\jre6\bin\java.dll
+0x6d7f0000 - 0x6d7ff000 	C:\Program Files\Java\jre6\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:D:\Program Files\Android\android-sdk\platforms\android-19\android.jar 
+java_command: com.example.speedyil.ReadExcel
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.6.0_10
+CLASSPATH=.;C:\Program Files\Java\jdk1.6.0_10\lib\dt.jar;C:\Program Files\Java\jdk1.6.0_10\lib\tools.jar;
+PATH=C:/Program Files/Java/jre6/bin/client;C:/Program Files/Java/jre6/bin;C:/Program Files/Java/jre6/lib/i386;C:\Program Files\AMD APP\bin\x86;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Java\jdk1.6.0_10\bin;C:\Program Files\Java\jdk1.6.0_10\jre\bin;C:\MinGW\bin;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;d:\CTEX\UserData\miktex\bin;d:\CTEX\MiKTeX\miktex\bin;d:\CTEX\CTeX\ctex\bin;d:\CTEX\CTeX\cct\bin;d:\CTEX\CTeX\ty\bin;d:\CTEX\Ghostscript\gs9.00\bin;d:\CTEX\GSview\gsview;d:\CTEX\WinEdt;D:\Program Files\Android\android-sdk/platform-tools;Android_SDK_HOME\tools;C:\Program Files\Java\jdk1.6.0_10/bin;JRE_HOME\bin;JAVA_JRE_HOME/bin;D:\Program Files\Android\android-sdk\tools;D:\Program Files\Android\android-sdk\platform-tools;d:\Program Files\Nmap;D:\Program Files\eclipse;
+USERNAME=hp
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.1 Build 7601 Service Pack 1
+
+CPU:total 4 (8 cores per cpu, 2 threads per core) family 6 model 10 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, ht
+
+Memory: 4k page, physical 2097151k(1446372k free), swap 3642612k(770656k free)
+
+vm_info: Java HotSpot(TM) Client VM (11.0-b15) for windows-x86 JRE (1.6.0_10-b33), built on Sep 26 2008 01:00:43 by "java_re" with MS VC++ 7.1
+
+time: Thu Apr 24 22:38:47 2014
+elapsed time: 0 seconds
+
